@@ -1,0 +1,89 @@
+plugins {
+	id 'net.fabricmc.fabric-loom' version "${loom_version}"
+	id 'maven-publish'
+	id 'com.diffplug.spotless' version "${spotless_version}"
+}
+
+version = project.mod_version
+group = project.maven_group
+base.archivesName = project.archives_base_name
+
+repositories {
+	maven { url = "https://api.modrinth.com/maven" }
+}
+
+loom {
+	splitEnvironmentSourceSets()
+
+	mods {
+		"camera-shake-lib" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	compileOnly "maven.modrinth:modmenu:${project.modmenu_version}"
+	localRuntime "maven.modrinth:modmenu:${project.modmenu_version}"
+}
+
+processResources {
+	def properties = [
+		mod_version: project.mod_version,
+		minecraft_version_range: project.minecraft_version_range,
+		loader_version_range: project.loader_version_range,
+		fabric_api_version_range: project.fabric_api_version_range,
+		modmenu_version_range: project.modmenu_version_range
+	]
+	inputs.properties properties
+
+	filesMatching("fabric.mod.json") {
+		expand properties
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 25
+}
+
+java {
+	withSourcesJar()
+	sourceCompatibility = JavaVersion.VERSION_25
+	targetCompatibility = JavaVersion.VERSION_25
+}
+
+jar {
+	def baseName = project.archives_base_name
+	inputs.property "archivesBaseName", baseName
+
+	from("LICENSE") {
+		rename { "${it}_${baseName}" }
+	}
+	from("README.md")
+}
+
+publishing {
+	publications {
+		create("mavenJava", MavenPublication) {
+			from components.java
+		}
+	}
+	repositories {
+	}
+}
+
+spotless {
+	java {
+		target 'src/*/java/**/*.java'
+		importOrder('com.rijz.camerashakelib', 'net.fabricmc', 'net.minecraft', 'com.mojang', 'java', 'javax')
+		removeUnusedImports()
+		eclipse()
+		trimTrailingWhitespace()
+		endWithNewline()
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "camera-shake-lib.command.success.single": "Shook camera for %s (intensity %s, %s ticks)",
+  "camera-shake-lib.command.success.multiple": "Shook camera for %s players (intensity %s, %s ticks)",
+  "camera-shake-lib.command.stop.single": "Stopped camera shake for %s",
+  "camera-shake-lib.command.stop.multiple": "Stopped camera shake for %s players",
+  "camera-shake-lib.command.error.intensity": "Intensity must be between 0.01 and 10.0 (found %s)",
+  "camera-shake-lib.command.error.duration": "Duration must be between 1 and 1200 ticks (found %s)",
+  "camera-shake-lib.command.error.frequency": "Frequency must be between 0.1 and 10.0 (found %s)",
+  "camera-shake-lib.command.error.player_only": "You must specify a target player when running from console",
+  "camera-shake-lib.command.error.no_targets": "No players found"
+}

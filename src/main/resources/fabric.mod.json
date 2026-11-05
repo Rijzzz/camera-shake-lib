@@ -1,0 +1,58 @@
+{
+	"schemaVersion": 1,
+	"id": "camera-shake-lib",
+	"version": "${mod_version}",
+	"name": "Camera Shake Lib",
+	"description": "A library that lets devs add smooth camera shake effects with a single line of code.",
+	"authors": [
+		"Rijz"
+	],
+	"contact": {
+		"homepage": "https://github.com/Rijzzz/camera-shake-lib",
+		"issues": "https://github.com/Rijzzz/camera-shake-lib/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/camera-shake-lib/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.rijz.camerashakelib.CameraShakeMod"
+		],
+		"client": [
+			"com.rijz.camerashakelib.client.CameraShakeClient"
+		],
+		"modmenu": [
+			"com.rijz.camerashakelib.client.CameraShakeModMenu"
+		]
+	},
+	"mixins": [
+		{
+			"config": "camera-shake-lib.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": "${loader_version_range}",
+		"minecraft": "${minecraft_version_range}",
+		"java": ">=25",
+		"fabric-api": "${fabric_api_version_range}"
+	},
+	"suggests": {
+		"modmenu": "${modmenu_version_range}"
+	},
+	"custom": {
+		"modmenu": {
+			"badges": [
+				"library"
+			],
+			"links": {
+				"modmenu.source": "https://github.com/Rijzzz/camera-shake-lib",
+				"modmenu.modrinth": "https://modrinth.com/mod/camera-shake-lib",
+				"modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/camera-shake-lib",
+				"modmenu.wiki": "https://github.com/Rijzzz/camera-shake-lib/wiki",
+				"modmenu.discord": "https://discord.com/invite/asPJ4qgs8q"
+			},
+			"update_checker": true
+		}
+	}
+}
