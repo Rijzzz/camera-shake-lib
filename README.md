@@ -2,6 +2,12 @@
 
 A library that lets devs add smooth camera shake effects with a single line of code.
 
+<a href="https://www.curseforge.com/minecraft/mc-mods/camera-shake-lib"><img src="badges/curseforge.svg" alt="CurseForge" height="38"></a>
+<a href="https://modrinth.com/mod/camera-shake-lib"><img src="badges/modrinth.svg" alt="Modrinth" height="38"></a>
+<a href="https://github.com/Rijzzz/camera-shake-lib"><img src="badges/github.svg" alt="GitHub" height="38"></a>
+<a href="https://discord.com/invite/asPJ4qgs8q"><img src="badges/discord.svg" alt="Discord" height="38"></a>
+<a href="https://github.com/Rijzzz/camera-shake-lib/wiki"><img src="badges/wiki.svg" alt="Wiki" height="38"></a>
+
 ## Features
 
 Adds camera shakes on pitch, yaw, and roll without messing with mouse aim. Works in client mods, server mods, and falls back to vanilla tilt if players join without the mod. You can test shakes in game using `/camerashake`.
