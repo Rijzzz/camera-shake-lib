@@ -1,6 +1,7 @@
 package com.rijz.camerashakelib.command;
 
 import com.rijz.camerashakelib.CameraShake;
+import com.rijz.camerashakelib.ShakeInstance;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
@@ -87,7 +88,7 @@ public final class CameraShakeCommand {
 		}
 
 		float rawDur = FloatArgumentType.getFloat(ctx, "duration");
-		if (rawDur < 1.0f || rawDur > 1200.0f) {
+		if (rawDur < 1.0f || rawDur > ShakeInstance.MAX_TICKS) {
 			throw BAD_DURATION.create(rawDur);
 		}
 

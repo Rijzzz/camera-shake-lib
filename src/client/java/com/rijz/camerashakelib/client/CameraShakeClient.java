@@ -6,6 +6,7 @@ import com.rijz.camerashakelib.network.CameraShakePayload;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 
 public class CameraShakeClient implements ClientModInitializer {
@@ -30,16 +31,14 @@ public class CameraShakeClient implements ClientModInitializer {
 		});
 
 		ClientPlayNetworking.registerGlobalReceiver(CameraShakePayload.TYPE, (payload, ctx) -> {
-			ctx.client().execute(() -> {
-				if (payload.intensity() <= 0.0f) {
-					CameraShakeManager.stopAll();
-				} else {
-					CameraShakeManager.addShake(
-							new ShakeInstance(payload.intensity(), payload.durationTicks(), payload.frequency()));
-				}
-			});
+			if (CameraShakePayload.STOP.equals(payload)) {
+				CameraShakeManager.stopAll();
+			} else {
+				CameraShake.shake(payload.intensity(), payload.durationTicks(), payload.frequency());
+			}
 		});
 
+		ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> CameraShakeManager.stopAll());
 		ClientTickEvents.END_CLIENT_TICK.register(client -> CameraShakeManager.onClientTick());
 	}
 }

@@ -29,7 +29,7 @@ public final class CameraShake {
 	}
 
 	public static void shake(float intensity, int dur, float freq) {
-		if (clientHandler != null && intensity > 0.0f && dur > 0) {
+		if (clientHandler != null && valid(intensity, dur, freq)) {
 			clientHandler.shake(new ShakeInstance(intensity, dur, freq));
 		}
 	}
@@ -56,7 +56,7 @@ public final class CameraShake {
 
 	public static void stop(ServerPlayer player) {
 		if (player != null && isSupported(player)) {
-			ServerPlayNetworking.send(player, new CameraShakePayload(0.0f, 1, 1.0f));
+			ServerPlayNetworking.send(player, CameraShakePayload.STOP);
 		}
 	}
 
@@ -65,12 +65,13 @@ public final class CameraShake {
 	}
 
 	public static void send(ServerPlayer player, float intensity, int dur, float freq) {
-		if (player == null || intensity <= 0.0f || dur <= 0) {
+		if (player == null || !valid(intensity, dur, freq)) {
 			return;
 		}
 
 		if (isSupported(player)) {
-			ServerPlayNetworking.send(player, new CameraShakePayload(intensity, dur, freq));
+			int d = Math.min(dur, ShakeInstance.MAX_TICKS);
+			ServerPlayNetworking.send(player, new CameraShakePayload(intensity, d, freq));
 		} else {
 			// play hurt tilt if they dont have the mod
 			float yaw = (float) (Math.random() * 360.0);
@@ -83,7 +84,7 @@ public final class CameraShake {
 	}
 
 	public static void sendNearby(ServerLevel lvl, Vec3 pos, double rad, float maxIntensity, int dur, float freq) {
-		if (lvl == null || pos == null || rad <= 0.0 || maxIntensity <= 0.0f || dur <= 0) {
+		if (lvl == null || pos == null || !Double.isFinite(rad) || rad <= 0.0 || !valid(maxIntensity, dur, freq)) {
 			return;
 		}
 
@@ -109,13 +110,17 @@ public final class CameraShake {
 	}
 
 	public static void sendAll(MinecraftServer server, float intensity, int dur, float freq) {
-		if (server == null || intensity <= 0.0f || dur <= 0) {
+		if (server == null || !valid(intensity, dur, freq)) {
 			return;
 		}
 
 		for (ServerPlayer player : server.getPlayerList().getPlayers()) {
 			send(player, intensity, dur, freq);
 		}
+	}
+
+	private static boolean valid(float intensity, int dur, float freq) {
+		return Float.isFinite(intensity) && intensity > 0.0f && dur > 0 && Float.isFinite(freq);
 	}
 
 	public interface ClientShakeHandler {

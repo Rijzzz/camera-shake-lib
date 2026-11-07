@@ -9,6 +9,8 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import io.netty.buffer.ByteBuf;
 
 public record CameraShakePayload(float intensity, int durationTicks, float frequency) implements CustomPacketPayload {
+	public static final CameraShakePayload STOP = new CameraShakePayload(0.0f, 1, 1.0f);
+
 	public static final CustomPacketPayload.Type<CameraShakePayload> TYPE = new CustomPacketPayload.Type<>(
 			CameraShakeMod.id("shake"));
 

@@ -44,6 +44,12 @@ Supported on Minecraft 26.1 to 26.3.
 
 ## For Developers
 
+### Quick Example
+
+```java
+CameraShake.shake(0.4f, 15);
+```
+
 ### Gradle Setup
 
 ```groovy
@@ -62,11 +68,11 @@ repositories {
 }
 
 dependencies {
-    implementation "maven.modrinth:camera-shake-lib:1.0.0"
+    implementation "maven.modrinth:camera-shake-lib:x.x.x"
 }
 ```
 
-Check out the [Wiki](https://github.com/Rijzzz/camera-shake-lib/wiki) for a detailed usage guide.
+Full usage guide on the [Wiki](https://github.com/Rijzzz/camera-shake-lib/wiki).
 
 ## Support
 

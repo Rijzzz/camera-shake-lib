@@ -1,8 +1,10 @@
 package com.rijz.camerashakelib;
 
 public class ShakeInstance {
-	private float intensity;
-	private int dur;
+	public static final int MAX_TICKS = 1200;
+
+	private final float intensity;
+	private final int dur;
 	private float freq;
 	private boolean decay;
 	private int ticksLeft;
@@ -16,15 +18,18 @@ public class ShakeInstance {
 	}
 
 	public ShakeInstance(float intensity, int dur, float freq, boolean decay) {
+		if (!Float.isFinite(intensity)) {
+			throw new IllegalArgumentException("Intensity must be finite");
+		}
 		this.intensity = Math.max(0.0f, intensity);
-		this.dur = Math.max(1, dur);
-		this.freq = Math.max(0.1f, freq);
+		this.dur = Math.clamp(dur, 1, MAX_TICKS);
+		this.freq = checkFreq(freq);
 		this.decay = decay;
 		this.ticksLeft = this.dur;
 	}
 
 	public ShakeInstance freq(float freq) {
-		this.freq = Math.max(0.1f, freq);
+		this.freq = checkFreq(freq);
 		return this;
 	}
 
@@ -78,5 +83,19 @@ public class ShakeInstance {
 
 	public int ticksLeft() {
 		return ticksLeft;
+	}
+
+	// clone current shake state
+	public ShakeInstance copy() {
+		ShakeInstance c = new ShakeInstance(intensity, dur, freq, decay);
+		c.ticksLeft = ticksLeft;
+		return c;
+	}
+
+	private static float checkFreq(float freq) {
+		if (!Float.isFinite(freq)) {
+			throw new IllegalArgumentException("Freq must be finite");
+		}
+		return Math.max(0.1f, freq);
 	}
 }
