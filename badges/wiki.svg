@@ -1,29 +1,52 @@
 
-        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <rect width="56" height="56" rx="8.4" fill="url(#paint0_linear_1_62)"/>
-            <rect x="1.05" y="1.05" width="54" height="54" rx="7.35" stroke="white" stroke-opacity="0.15" stroke-width="2.1"/>
-        <g filter="url(#filter0_d_1_62)">
-            <rect x="8" y="8" width="40" height="40" fill="url(#pattern0_1_62)"/>
-        </g>
-            <defs>
-                <filter id="filter0_d_1_62" x="2.28571" y="2.28571" width="51.4286" height="51.4286" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                    <feOffset/>
-                    <feGaussianBlur stdDeviation="2.85714"/>
-                    <feComposite in2="hardAlpha" operator="out"/>
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_62"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_62" result="shape"/>
-                </filter>
-                <pattern id="pattern0_1_62" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_1_62" transform="scale(0.00195312)"/>
-                </pattern>
-                <linearGradient id="paint0_linear_1_62" x1="28" y1="0" x2="28" y2="56" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#8f004c"/>
-                    <stop offset="1" stop-color="#61003d"/>
-                </linearGradient>
-                <image id="image0_1_62" width="512" height="512" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1ib29rLW9wZW4tdGV4dCBwcmV2aWV3LWljb24iPjxwYXRoIGQ9Ik0xMiA1djE2Ii8+PHBhdGggZD0iTTE2IDEzaDIiLz48cGF0aCBkPSJNMTYgOWgyIi8+PHBhdGggZD0iTTIwLjAwMSAxOUEyIDIgMCAwMDIyIDE3VjVhMiAyIDAgMDAtMS45OTktMkwxNiAzLjAwMkE1IDUgMCAwMDEyIDVhNSA1IDAgMDAtNC0ySDRhMiAyIDAgMDAtMiAydjEyYTIgMiAwIDAwMS45OTkgMkg4YTUgNSAwIDAxNCAyIDUgNSAwIDAxNC0yeiIvPjxwYXRoIGQ9Ik02IDEzaDIiLz48cGF0aCBkPSJNNiA5aDIiLz48L3N2Zz4=" clip-path="inset(0% round 64px)" />
-            </defs>
-        </svg>
-        
+<svg width="155.4765625" height="56" viewBox="0 0 155.4765625 56" fill="none" xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g>
+		<rect x="0" width="155.4765625" height="56" rx="8" fill="url(#BackgroundGradient)" />
+		<rect x="1.05" y="1.05" width="153.4765625" height="54" rx="6.95" stroke="white" stroke-opacity="0.15"
+			stroke-width="2.1" />
+		<g filter="url(#IconShadow)">
+			<rect x="16" y="8" width="40" height="40" fill="url(#IconPattern)" />
+		</g>
+		<g filter="url(#TextShadow)">
+			<!-- Generate these -->
+			<path d="M67.07 24.50L65.29 24.50L65.29 12.86L69.46 12.86Q70.80 12.86 71.70 13.32Q72.60 13.79 73.05 14.62Q73.49 15.45 73.49 16.52L73.49 16.52Q73.49 17.59 73.04 18.40Q72.59 19.21 71.70 19.66L71.70 19.66Q71.54 19.73 71.37 19.80L71.37 19.80L73.93 24.50L71.91 24.50L69.55 20.10Q69.50 20.10 69.45 20.10L69.45 20.10L67.07 20.10L67.07 24.50ZM67.07 14.38L67.07 18.58L69.27 18.58Q70.13 18.58 70.66 18.33Q71.19 18.09 71.44 17.63Q71.69 17.16 71.69 16.52L71.69 16.52Q71.69 15.86 71.44 15.38Q71.19 14.91 70.66 14.64Q70.13 14.38 69.26 14.38L69.26 14.38L67.07 14.38ZM79.29 24.68L79.29 24.68Q78 24.68 77.06 24.13Q76.13 23.57 75.62 22.56Q75.12 21.55 75.12 20.20L75.12 20.20Q75.12 18.85 75.61 17.83Q76.11 16.80 77.02 16.23Q77.92 15.66 79.14 15.66L79.14 15.66Q79.89 15.66 80.59 15.90Q81.28 16.15 81.84 16.67Q82.39 17.20 82.71 18.03Q83.04 18.86 83.04 20.05L83.04 20.05L83.04 20.66L76.84 20.66Q76.88 21.45 77.16 22L77.16 22Q77.46 22.63 78.02 22.94Q78.57 23.26 79.30 23.26L79.30 23.26Q79.79 23.26 80.18 23.12Q80.57 22.98 80.86 22.71Q81.14 22.43 81.29 22.02L81.29 22.02L82.91 22.41Q82.70 23.08 82.20 23.59Q81.70 24.11 80.96 24.39Q80.23 24.68 79.29 24.68ZM76.85 19.38L76.85 19.38L81.34 19.38Q81.28 18.83 81.10 18.38L81.10 18.38Q80.85 17.77 80.36 17.42Q79.88 17.08 79.14 17.08L79.14 17.08Q78.41 17.08 77.90 17.43Q77.38 17.78 77.12 18.35L77.12 18.35Q76.89 18.83 76.85 19.38ZM87.37 24.70L87.37 24.70Q86.54 24.70 85.87 24.39Q85.20 24.08 84.80 23.48Q84.41 22.89 84.41 22.03L84.41 22.03Q84.41 21.29 84.70 20.81Q84.98 20.34 85.47 20.05Q85.96 19.77 86.56 19.63Q87.16 19.49 87.77 19.42L87.77 19.42Q88.55 19.33 89.03 19.27Q89.52 19.21 89.75 19.07Q89.98 18.94 89.98 18.63L89.98 18.63L89.98 18.59Q89.98 18.09 89.79 17.76Q89.60 17.42 89.23 17.24Q88.86 17.05 88.30 17.05L88.30 17.05Q87.73 17.05 87.32 17.23Q86.91 17.41 86.66 17.68Q86.41 17.95 86.28 18.25L86.28 18.25L84.66 17.83Q84.96 17.05 85.52 16.57Q86.07 16.09 86.79 15.88Q87.51 15.66 88.27 15.66L88.27 15.66Q88.80 15.66 89.40 15.78Q89.99 15.91 90.52 16.23Q91.04 16.56 91.37 17.16Q91.70 17.75 91.70 18.70L91.70 18.70L91.70 24.50L90.03 24.50L90.03 23.30L89.95 23.30Q89.77 23.64 89.44 23.96Q89.10 24.28 88.59 24.49Q88.08 24.70 87.37 24.70ZM87.75 23.31L87.75 23.31Q88.45 23.31 88.95 23.04Q89.45 22.77 89.72 22.31Q89.98 21.86 89.98 21.35L89.98 21.35L89.98 20.23Q89.89 20.33 89.63 20.40Q89.37 20.48 89.03 20.54Q88.70 20.59 88.38 20.63Q88.07 20.67 87.87 20.70L87.87 20.70Q87.38 20.76 86.98 20.91Q86.58 21.05 86.34 21.33Q86.10 21.60 86.10 22.05L86.10 22.05Q86.10 22.47 86.32 22.75Q86.53 23.03 86.90 23.17Q87.27 23.31 87.75 23.31ZM97.26 24.67L97.26 24.67Q96.20 24.67 95.37 24.13Q94.54 23.59 94.07 22.57Q93.60 21.56 93.60 20.16L93.60 20.16Q93.60 18.73 94.08 17.73Q94.55 16.72 95.38 16.19Q96.21 15.66 97.26 15.66L97.26 15.66Q98.07 15.66 98.57 15.93Q99.06 16.20 99.34 16.55Q99.63 16.91 99.77 17.19L99.77 17.19L99.87 17.19L99.87 12.86L101.59 12.86L101.59 24.50L99.91 24.50L99.91 23.13L99.77 23.13Q99.63 23.41 99.34 23.77Q99.05 24.13 98.55 24.40Q98.05 24.67 97.26 24.67ZM97.63 23.21L97.63 23.21Q98.37 23.21 98.87 22.82Q99.38 22.43 99.64 21.74Q99.90 21.05 99.90 20.14L99.90 20.14Q99.90 19.23 99.64 18.55Q99.38 17.88 98.88 17.50Q98.38 17.12 97.63 17.12L97.63 17.12Q96.88 17.12 96.37 17.52Q95.87 17.91 95.61 18.60Q95.36 19.28 95.36 20.14L95.36 20.14Q95.36 21.01 95.62 21.70Q95.88 22.40 96.38 22.80Q96.89 23.21 97.63 23.21ZM110.16 15.77L111.90 15.77L111.90 17.16L110.16 17.16L110.16 22.14Q110.16 22.66 110.38 22.91Q110.60 23.16 111.11 23.16L111.11 23.16Q111.24 23.16 111.46 23.13Q111.68 23.09 111.84 23.06L111.84 23.06L112.14 24.44Q111.87 24.53 111.55 24.57Q111.24 24.62 110.94 24.62L110.94 24.62Q109.75 24.62 109.09 24.00Q108.44 23.39 108.44 22.28L108.44 22.28L108.44 17.16L107.16 17.16L107.16 15.77L108.44 15.77L108.44 13.69L110.16 13.69L110.16 15.77ZM115.33 19.33L115.33 19.33L115.33 24.50L113.61 24.50L113.61 12.86L115.31 12.86L115.31 17.33Q115.66 16.59 116.20 16.20L116.20 16.20Q116.92 15.66 117.95 15.66L117.95 15.66Q118.84 15.66 119.51 16.03Q120.18 16.41 120.55 17.14Q120.92 17.87 120.92 18.95L120.92 18.95L120.92 24.50L119.20 24.50L119.20 19.16Q119.20 18.22 118.71 17.69Q118.22 17.16 117.36 17.16L117.36 17.16Q116.78 17.16 116.32 17.41Q115.86 17.66 115.59 18.15Q115.33 18.63 115.33 19.33ZM127 24.68L127 24.68Q125.71 24.68 124.77 24.13Q123.84 23.57 123.33 22.56Q122.83 21.55 122.83 20.20L122.83 20.20Q122.83 18.85 123.32 17.83Q123.82 16.80 124.73 16.23Q125.63 15.66 126.85 15.66L126.85 15.66Q127.60 15.66 128.30 15.90Q128.99 16.15 129.55 16.67Q130.10 17.20 130.43 18.03Q130.75 18.86 130.75 20.05L130.75 20.05L130.75 20.66L124.55 20.66Q124.59 21.45 124.87 22L124.87 22Q125.17 22.63 125.73 22.94Q126.28 23.26 127.02 23.26L127.02 23.26Q127.50 23.26 127.89 23.12Q128.28 22.98 128.57 22.71Q128.85 22.43 129 22.02L129 22.02L130.62 22.41Q130.41 23.08 129.91 23.59Q129.41 24.11 128.68 24.39Q127.94 24.68 127 24.68ZM124.56 19.38L124.56 19.38L129.05 19.38Q128.99 18.83 128.81 18.38L128.81 18.38Q128.56 17.77 128.07 17.42Q127.59 17.08 126.85 17.08L126.85 17.08Q126.13 17.08 125.61 17.43Q125.09 17.78 124.83 18.35L124.83 18.35Q124.60 18.83 124.56 19.38Z" fill="#ffffff"/>
+			<path d="M71.02 43.50L67.69 43.50L64.39 31.13L67.64 31.13L68.86 36.60Q69.04 37.43 69.18 38.40Q69.33 39.37 69.47 40.33L69.47 40.33Q69.48 40.41 69.50 40.50L69.50 40.50Q69.50 40.41 69.52 40.33L69.52 40.33Q69.67 39.37 69.84 38.40Q70.00 37.43 70.20 36.60L70.20 36.60L71.51 31.13L74.49 31.13L75.80 36.60Q75.99 37.43 76.16 38.40Q76.33 39.37 76.48 40.33L76.48 40.33Q76.49 40.40 76.50 40.47L76.50 40.47Q76.51 40.40 76.53 40.33L76.53 40.33Q76.66 39.37 76.81 38.40Q76.97 37.43 77.14 36.60L77.14 36.60L78.36 31.13L81.61 31.13L78.30 43.50L74.98 43.50L73.54 37.79Q73.25 36.62 73.06 35.25L73.06 35.25Q73.02 35 72.99 34.76L72.99 34.76Q72.96 34.99 72.93 35.22L72.93 35.22Q72.77 36.58 72.47 37.79L72.47 37.79L71.02 43.50ZM85.85 43.50L82.95 43.50L82.95 34.22L85.85 34.22L85.85 43.50ZM84.40 33.13L84.40 33.13Q83.78 33.13 83.34 32.72Q82.90 32.31 82.90 31.74L82.90 31.74Q82.90 31.16 83.34 30.75Q83.78 30.34 84.40 30.34L84.40 30.34Q85.02 30.34 85.46 30.75Q85.90 31.15 85.90 31.74L85.90 31.74Q85.90 32.32 85.46 32.73Q85.02 33.13 84.40 33.13ZM90.66 43.50L87.77 43.50L87.77 31.13L90.66 31.13L90.66 37.57L90.79 37.57L93.45 34.22L96.75 34.22L93.43 38.27L96.88 43.50L93.53 43.50L91.28 39.96L90.66 40.69L90.66 43.50ZM100.74 43.50L97.84 43.50L97.84 34.22L100.74 34.22L100.74 43.50ZM99.29 33.13L99.29 33.13Q98.67 33.13 98.23 32.72Q97.79 32.31 97.79 31.74L97.79 31.74Q97.79 31.16 98.23 30.75Q98.67 30.34 99.29 30.34L99.29 30.34Q99.91 30.34 100.35 30.75Q100.79 31.15 100.79 31.74L100.79 31.74Q100.79 32.32 100.35 32.73Q99.91 33.13 99.29 33.13Z" fill="#ff0066"/>
+		</g>
+	</g>
+	<defs>
+		<filter id="IconShadow" x="10.2857" y="2.28571" width="51.4286" height="51.4286" filterUnits="userSpaceOnUse"
+			color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+				result="hardAlpha" />
+			<feOffset />
+			<feGaussianBlur stdDeviation="2.85714" />
+			<feComposite in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+			<feBlend mode="normal" in2="BackgroundImageFix" result="DropShadowEffect" />
+			<feBlend mode="normal" in="SourceGraphic" in2="DropShadowEffect" result="shape" />
+		</filter>
+		<pattern id="IconPattern" patternContentUnits="objectBoundingBox" width="1" height="1">
+			<use xlink:href="#Icon" transform="scale(0.00195312)" />
+		</pattern>
+		<filter id="TextShadow" x="58.4" y="3.9" width="806.2" height="48.2" filterUnits="userSpaceOnUse"
+			color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+				result="hardAlpha" />
+			<feOffset />
+			<feGaussianBlur stdDeviation="2.8" />
+			<feComposite in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+			<feBlend mode="normal" in2="BackgroundImageFix" result="DropShadowEffect" />
+			<feBlend mode="normal" in="SourceGraphic" in2="DropShadowEffect" result="shape" />
+		</filter>
+		<linearGradient id="BackgroundGradient" x1="77.5" y1="0" x2="77.5" y2="56" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#8f004c" /> <!-- gradientStart -->
+			<stop offset="1" stop-color="#61003d" /> <!-- gradientEnd -->
+		</linearGradient>
+		<!-- Generate this tag in code -->
+		<image id="Icon" width="512" height="512" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1ib29rLW9wZW4tdGV4dCBwcmV2aWV3LWljb24iPjxwYXRoIGQ9Ik0xMiA1djE2Ii8+PHBhdGggZD0iTTE2IDEzaDIiLz48cGF0aCBkPSJNMTYgOWgyIi8+PHBhdGggZD0iTTIwLjAwMSAxOUEyIDIgMCAwMDIyIDE3VjVhMiAyIDAgMDAtMS45OTktMkwxNiAzLjAwMkE1IDUgMCAwMDEyIDVhNSA1IDAgMDAtNC0ySDRhMiAyIDAgMDAtMiAydjEyYTIgMiAwIDAwMS45OTkgMkg4YTUgNSAwIDAxNCAyIDUgNSAwIDAxNC0yeiIvPjxwYXRoIGQ9Ik02IDEzaDIiLz48cGF0aCBkPSJNNiA5aDIiLz48L3N2Zz4=" clip-path="inset(0% round 64px)" />
+	</defs>
+</svg>
